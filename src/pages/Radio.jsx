@@ -1,15 +1,15 @@
 import React from "react";
 import Sidebar from "../components/Sidebar/Sidebar";
 
-const Home = () => {
+const Radio = () => {
     return (
         <div className='main'>
             <Sidebar />
             <div className='content'>
-                <h1>Home</h1>
+                <h1>Radio</h1>
             </div>
         </div>
     );
 };
 
-export default Home;
+export default Radio;

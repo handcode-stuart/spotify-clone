@@ -1,15 +1,15 @@
 import React from "react";
 import Sidebar from "../components/Sidebar/Sidebar";
 
-const Home = () => {
+const Browse = () => {
     return (
         <div className='main'>
             <Sidebar />
             <div className='content'>
-                <h1>Home</h1>
+                <h1>Browse</h1>
             </div>
         </div>
     );
 };
 
-export default Home;
+export default Browse;

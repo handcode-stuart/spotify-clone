@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 import "./Sidebar.scss";
 
@@ -7,14 +8,20 @@ class Sidebar extends Component {
         return (
             <div className='sidebar'>
                 <ul>
-                    <li className='active'>
-                        <span> </span>Home
+                    <li>
+                        <NavLink exact activeClassName='active' to='/'>
+                            <span> </span>Home
+                        </NavLink>
                     </li>
                     <li>
-                        <span> </span>Browse
+                        <NavLink activeClassName='active' to='/browse'>
+                            <span> </span>Browse
+                        </NavLink>
                     </li>
                     <li>
-                        <span> </span>Radio
+                        <NavLink activeClassName='active' to='/radio'>
+                            <span> </span>Radio
+                        </NavLink>
                     </li>
                 </ul>
             </div>

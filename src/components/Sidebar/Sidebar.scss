@@ -10,14 +10,29 @@
     padding: 20px 0;
 
     li {
-        color: rgba(255, 255, 255, 0.4);
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 6px 14px;
         margin-bottom: 10px;
-        border-left: 8px solid $color-grey-dark;
-        font-weight: 300;
+
+        a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.4);
+            padding: 6px 14px;
+            display: flex;
+            font-weight: 300;
+            justify-content: flex-start;
+            align-items: center;
+            border-left: 8px solid $color-grey-dark;
+
+            &.active,
+            &:hover,
+            &:focus {
+                color: $color-white;
+                border-color: $color-green;
+
+                span {
+                    background-color: $color-white;
+                }
+            }
+        }
 
         span {
             display: block;
@@ -25,18 +40,6 @@
             height: 22px;
             margin-right: 14px;
             background-color: rgba(255, 255, 255, 0.4);
-        }
-
-        &.active,
-        &:hover,
-        &:focus {
-            border-color: $color-green;
-            color: $color-white;
-            cursor: pointer;
-
-            span {
-                background-color: $color-white;
-            }
         }
     }
 }
