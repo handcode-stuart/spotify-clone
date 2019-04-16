@@ -3,8 +3,8 @@ import Sidebar from "../components/Sidebar/Sidebar";
 
 const NotFound = () => {
     return (
-        <div>
-            <Sidebar />
+        <div className='content'>
+            <h1>Page not found</h1>
         </div>
     );
 };

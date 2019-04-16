@@ -42,4 +42,13 @@
             background-color: rgba(255, 255, 255, 0.4);
         }
     }
+
+    &__collection {
+        margin-bottom: 40px;
+    }
+
+    &__collection-title {
+        padding-left: 24px;
+        margin-bottom: 14px;
+    }
 }
