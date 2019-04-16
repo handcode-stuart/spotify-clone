@@ -1,0 +1,28 @@
+@import "./index.scss";
+
+@import url("https://fonts.googleapis.com/css?family=Signika:300,400,600,700");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+        sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    background-color: $color-black;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Signika";
+    font-size: 16px;
+}
+
+ul {
+    li {
+        list-style-type: none;
+    }
+}
