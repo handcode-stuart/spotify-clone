@@ -21,7 +21,6 @@ class Home extends Component {
                 {!this.state.loading ? (
                     <div>
                         <h1>Home</h1>
-                        <h3>Tunes for your morning...</h3>
                     </div>
                 ) : (
                     <Loading />

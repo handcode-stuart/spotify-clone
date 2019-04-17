@@ -1,0 +1,16 @@
+@import "../../index.scss";
+
+.search {
+    input {
+        border: 0;
+        outline: 0;
+        padding: 8px 12px;
+        font-size: 1em;
+        background-color: $color-grey-dark;
+        border-radius: 4px;
+        color: $color-white;
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+    }
+}
