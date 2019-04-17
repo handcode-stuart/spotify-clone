@@ -1,4 +1,17 @@
 $color-black: #131313;
 $color-white: #fff;
 $color-green: #1ca01c;
+$color-grey-light: #313131;
 $color-grey-dark: #191818;
+
+$transition-time: 250ms;
+$transition-ease: ease-in-out;
+$global-transition: $transition-time $transition-ease;
+
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}

@@ -9,8 +9,14 @@
         background-color: $color-grey-dark;
         border-radius: 4px;
         color: $color-white;
+        @include transition(background-color $global-transition);
+
         &::placeholder {
             color: rgba(255, 255, 255, 0.4);
+        }
+
+        &:focus {
+            background-color: $color-grey-light;
         }
     }
 }

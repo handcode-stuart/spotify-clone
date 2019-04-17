@@ -7,12 +7,7 @@
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
+    background-color: $color-black;
     align-items: center;
-    background: rgb(2, 0, 36);
     margin-bottom: 20px;
-    background: linear-gradient(
-        180deg,
-        $color-grey-dark 25%,
-        rgba(255, 255, 255, 0) 100%
-    );
 }
