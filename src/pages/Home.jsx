@@ -1,12 +1,33 @@
-import React from "react";
-import Sidebar from "../components/Sidebar/Sidebar";
+import React, { Component } from "react";
+import Loading from "../components/Loading/Loading";
 
-const Home = () => {
-    return (
-        <div className='content'>
-            <h1>Home</h1>
-        </div>
-    );
-};
+class Home extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            loading: true,
+        };
+    }
+    componentDidMount() {
+        setTimeout(() => {
+            this.setState({ loading: false });
+        }, 1000);
+    }
+    render() {
+        return (
+            <div className='content'>
+                {!this.state.loading ? (
+                    <div>
+                        <h1>Home</h1>
+                        <h3>Tunes for your morning...</h3>
+                    </div>
+                ) : (
+                    <Loading />
+                )}
+            </div>
+        );
+    }
+}
 
 export default Home;

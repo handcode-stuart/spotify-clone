@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 
 const MainNav = () => {
     return (
-        <div class='sidebar__collection'>
-            <ul class='sidebar__main-nav'>
+        <div className='sidebar__collection'>
+            <ul className='sidebar__main-nav'>
                 <li>
                     <NavLink exact activeClassName='active' to='/'>
                         <span> </span>Home

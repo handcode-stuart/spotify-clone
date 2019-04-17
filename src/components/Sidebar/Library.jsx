@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 
 const Library = () => {
     return (
-        <div class='sidebar__collection'>
-            <h4 class='sidebar__collection-title'>Your Library</h4>
+        <div className='sidebar__collection'>
+            <h4 className='sidebar__collection-title'>Your Library</h4>
             <ul>
                 <li>
                     <NavLink activeClassName='active' to='/library/songs'>
