@@ -2,9 +2,9 @@ import React from "react";
 
 const Stations = () => {
     return (
-        <div className='content'>
+        <React.Fragment>
             <h1>Stations</h1>
-        </div>
+        </React.Fragment>
     );
 };
 

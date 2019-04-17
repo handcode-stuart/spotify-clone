@@ -2,9 +2,9 @@ import React from "react";
 
 const Radio = () => {
     return (
-        <div className='content'>
+        <React.Fragment>
             <h1>Radio</h1>
-        </div>
+        </React.Fragment>
     );
 };
 

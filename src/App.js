@@ -15,6 +15,7 @@ import Songs from "./pages/Songs";
 import Stations from "./pages/Stations";
 import Videos from "./pages/Videos";
 import Podcasts from "./pages/Podcasts";
+import TopNav from "./components/TopNav/TopNav";
 
 class App extends Component {
     render() {
@@ -22,18 +23,30 @@ class App extends Component {
             <Router>
                 <div className='main'>
                     <Sidebar />
-                    <Switch>
-                        <Route exact path='/' component={Home} />
-                        <Route path='/browse' component={Browse} />
-                        <Route path='/radio' component={Radio} />
-                        <Route path='/library/songs' component={Songs} />
-                        <Route path='/library/albums' component={Albums} />
-                        <Route path='/library/artists' component={Artists} />
-                        <Route path='/library/stations' component={Stations} />
-                        <Route path='/library/videos' component={Videos} />
-                        <Route path='/library/podcasts' component={Podcasts} />
-                        <Route component={NotFound} />
-                    </Switch>
+                    <div className='content'>
+                        <TopNav />
+                        <Switch>
+                            <Route exact path='/' component={Home} />
+                            <Route path='/browse' component={Browse} />
+                            <Route path='/radio' component={Radio} />
+                            <Route path='/library/songs' component={Songs} />
+                            <Route path='/library/albums' component={Albums} />
+                            <Route
+                                path='/library/artists'
+                                component={Artists}
+                            />
+                            <Route
+                                path='/library/stations'
+                                component={Stations}
+                            />
+                            <Route path='/library/videos' component={Videos} />
+                            <Route
+                                path='/library/podcasts'
+                                component={Podcasts}
+                            />
+                            <Route component={NotFound} />
+                        </Switch>
+                    </div>
                 </div>
             </Router>
         );

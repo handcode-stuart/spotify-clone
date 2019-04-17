@@ -2,9 +2,9 @@ import React from "react";
 
 const NotFound = () => {
     return (
-        <div className='content'>
+        <React.Fragment>
             <h1>Page not found</h1>
-        </div>
+        </React.Fragment>
     );
 };
 

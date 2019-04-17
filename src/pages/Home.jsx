@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import Loading from "../components/Loading/Loading";
 
 class Home extends Component {
@@ -12,11 +13,11 @@ class Home extends Component {
     componentDidMount() {
         setTimeout(() => {
             this.setState({ loading: false });
-        }, 1000);
+        }, 500);
     }
     render() {
         return (
-            <div className='content'>
+            <React.Fragment>
                 {!this.state.loading ? (
                     <div>
                         <h1>Home</h1>
@@ -25,7 +26,7 @@ class Home extends Component {
                 ) : (
                     <Loading />
                 )}
-            </div>
+            </React.Fragment>
         );
     }
 }

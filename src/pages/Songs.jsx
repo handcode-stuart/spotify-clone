@@ -2,9 +2,9 @@ import React from "react";
 
 const Songs = () => {
     return (
-        <div className='content'>
+        <React.Fragment>
             <h1>Songs</h1>
-        </div>
+        </React.Fragment>
     );
 };
 

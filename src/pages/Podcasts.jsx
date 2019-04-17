@@ -2,9 +2,9 @@ import React from "react";
 
 const Podcasts = () => {
     return (
-        <div className='content'>
+        <React.Fragment>
             <h1>Podcasts</h1>
-        </div>
+        </React.Fragment>
     );
 };
 
